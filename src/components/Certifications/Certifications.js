@@ -1,4 +1,5 @@
 import Template from '../Template1/Template.js'
+import data from './Data.json'
 function Certifications() {
     return (
         <div className="features section__padding" id="certifications">
@@ -10,9 +11,11 @@ function Certifications() {
 
             <div className="features-container">
                 <div>
-                    <Template head="Introduction to LLMs" content="Google Cloud (Coursera)" />
-                    <Template head="Machine Learning" content="Stanford Online" />
-                    <Template head="Leaders of Learning" content="HardvardX" />
+                    {
+                        data.map((cert, index) => (
+                            <Template key={index} head={cert.head} content={cert.content} />
+                        ))
+                    }
                 </div>
             </div>
 
