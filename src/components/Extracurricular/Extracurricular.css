@@ -1,0 +1,81 @@
+.extracurricular__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.extracurricular__heading {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.extracurricular__heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+
+
+.extracurricular__container_article-content p:last-child {
+    cursor: pointer;
+}
+
+.extracurricular__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.extracurricular__container_groupA {
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+.extracurricular__container_groupB {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+    .extracurricular__container {
+        flex-direction: column-reverse;
+    }
+
+    .extracurricular__container_groupA {
+        margin: 2rem 0;
+    }
+
+    .extracurricular__container_groupA .extracurricular__container_article  {
+       width: 48%;
+    }
+
+    .extracurricular__container_groupA .extracurricular__container_article-image {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .extracurricular__container_groupB {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .extracurricular__container_groupA .extracurricular__container_article  {
+       width: 100%;
+    }
+
+    .extracurricular__heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .extracurricular__heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
