@@ -1,5 +1,5 @@
 import Template from '../Template1/Template.js';
-
+import data from './Data.json'
 function Education() {
     return (
         <div className="features section__padding" id="education">
@@ -9,9 +9,11 @@ function Education() {
 
             <div className="features-container">
                 <div>
-                    <Template head="VNR Vignana Jyothi Institute of Engineering and Technology" content="CGPA: 8.72 (Till 6th semester)" />
-                    <Template head="Trinity Junior College" content="Intermediate (12th) Score: 966/1000" />
-                    <Template head="Anglo Vedic Convent High School" content="10th CGPA: 9.7/10" />
+                    {
+                        data.map((edu, index) => (
+                            <Template key={index} head={edu.head} content={edu.content} />
+                        ))
+                    }
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 import Template from '../Template1/Template.js'
-
+import data from './Data.json'
 function VolunteerExp () {
     return (
         <div className="features section__padding" id="volunteer">
@@ -11,8 +11,11 @@ function VolunteerExp () {
 
             <div className="features-container">
                 <div>
-                    <Template head="Content Creator & Blogger (LinkedIn)" content="I write posts on a wide range of topics, with the goal of engaging my 8000+ followers." />
-                    <Template head="Contributing Writer (Quora)" content="I actively write answers on Quora. I have more than 125,000 views." />
+                    {
+                        data.map((vol, index)=>(
+                            <Template key={index} head={vol.head} content={vol.content}/>
+                        ))
+                    }
                 </div>
             </div>
 
