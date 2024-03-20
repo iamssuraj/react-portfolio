@@ -1,5 +1,5 @@
 import "./header.css"
-import myImage from "../../images/Suraj.png"
+import myImage from "../../images/Suraj.jpg"
 
 function Header() {
   return (
