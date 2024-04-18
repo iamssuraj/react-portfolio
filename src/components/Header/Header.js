@@ -10,7 +10,7 @@ function Header() {
       </div>
       <div className="header-content">
         <h1 className="gradient__text">Suraj Sanganbhatla</h1>
-        <p>Software Engineer Intern at Zenoti, CS Senior at VNRVJIET</p>
+        <p>Software Engineer Intern at Zenoti</p>
       </div>
     </div>
   )
