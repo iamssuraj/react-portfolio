@@ -1,6 +1,12 @@
 [
     {
+      "head": "Interactive Divorce Analysis System",
+      "link":"https://github.com/iamssuraj/Divorce-Prediction-CapsNet-HyperNet",
+      "content": "Developed a Divorce Analysis System using Capsule Neural Networks and Hypernetworks achieving an accuracy of around 96.83%."
+    },
+    {
       "head": "Portfolio Website (New version)",
+      "link":"https://github.com/iamssuraj/react-portfolio",
       "content": "This is the same website that you're looking at. Built this website using ReactJS."
     },
     {
