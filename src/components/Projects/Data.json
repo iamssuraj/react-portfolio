@@ -1,7 +1,7 @@
 [
     {
       "head": "Interactive Divorce Analysis System",
-      "link":"https://github.com/iamssuraj/Divorce-Prediction-CapsNet-HyperNet",
+      "link":"https://divorce-prediction.streamlit.app/",
       "content": "Developed a Divorce Analysis System using Capsule Neural Networks and Hypernetworks achieving an accuracy of around 96.83%."
     },
     {
@@ -16,7 +16,7 @@
     },
     {
       "head": "Interactive Lung Cancer Detection System",
-      "link": "https://github.com/iamssuraj/Interactive-Lung-Cancer-Detection-System",
+      "link": "https://lung-cancer.streamlit.app/",
       "content": "Built an interactive lung cancer detection system using multiple Machine Learning algorithms such as Logistic Regression, DT, SVM, KNN, Random Forest, and Naive Bayes and ANN on a dataset from Kaggle, achieving a combined accuracy of 94.6183%."
     },
     {
